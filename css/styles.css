@@ -11,6 +11,7 @@
 body {
   background-color: #ffffff;
   color: #212121;
+  font-family: Roboto, sans-serif;
 }
 
 .second-background {
@@ -27,6 +28,9 @@ body {
 /* Лого */
 .logo {
   color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
 }
 /* Ссылки */
 .link {
@@ -59,6 +63,7 @@ body {
 }
 /* Кнопка */
 .button {
+  cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -98,7 +103,13 @@ body {
 }
 
 /* Фильтр портфолио */
+.button-active {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
 .button-non-active {
+  cursor: pointer;
   color: #212121;
   background-color: #f5f4fa;
 }
