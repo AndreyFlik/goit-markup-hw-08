@@ -15,6 +15,7 @@
   --accent-text-color: #2196f3;
   --white-color: #ffffff;
   --button-background-hover: #188ce8;
+  --background-secondary-color: #2f303a;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 }
 
 .background-content {
-  background-color: #2f303a;
+  background-color: var(--background-secondary-color);
 }
 /* Шапка */
 /* Лого */
@@ -190,7 +191,7 @@ body {
 }
 /* Фон */
 .background-footer {
-  background-color: #2f303a;
+  background-color: var(--background-secondary-color);
 }
 
 /* Адрес */
