@@ -96,6 +96,10 @@ body {
 
 /* Наши приимущества */
 /* Заголовок */
+.list {
+  list-style: none;
+}
+
 .section-tittle {
   color: #212121;
   font-size: 14px;
