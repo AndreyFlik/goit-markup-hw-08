@@ -36,9 +36,7 @@ body {
   color: #2196f3;
 }
 
-.link:hover {
-  color: #2196f3;
-}
+.link:hover,
 .link:focus {
   color: #2196f3;
 }
@@ -47,10 +45,7 @@ body {
 .nav-link {
   color: #757575;
 }
-.nav-link:hover {
-  color: #2196f3;
-}
-
+.nav-link:hover,
 .nav-link:focus {
   color: #2196f3;
 }
