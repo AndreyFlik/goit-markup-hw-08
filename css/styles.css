@@ -25,6 +25,7 @@ body {
 /* Лого */
 
 .logo {
+  text-decoration: none;
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
@@ -35,6 +36,7 @@ body {
 }
 /* Ссылки */
 .link {
+  text-decoration: none;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -42,6 +44,7 @@ body {
 }
 
 .active-link {
+  text-decoration: none;
   color: #2196f3;
   font-weight: 500;
   font-size: 14px;
@@ -55,6 +58,7 @@ body {
 
 /* Контакты */
 .nav-link {
+  text-decoration: none;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
