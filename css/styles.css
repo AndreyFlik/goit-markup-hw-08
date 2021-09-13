@@ -1,14 +1,24 @@
 /* Цвето основоного текста #212121 */
 /* Вторичный цвет текста #757575 */
-/* Белыйй #FFFFFF */
+/* Первичный фон #FFFFFF */
+/* Вторичный фон #E5E5E5 */
+/* Фон контента #2F303A */
 /* Цвет акцента #2196F3 */
 /* Цвет лого #000000 */
+/* Белый #FFFFFF */
 
 body {
   background-color: #ffffff;
   color: #212121;
 }
 
+.second-background {
+  background-color: #e5e5e5;
+}
+
+.background-content {
+  background-color: #2f303a;
+}
 /* Шапка */
 
 /* Лого */
@@ -36,19 +46,57 @@ body {
 .nav-link:focus {
   color: #2196f3;
 }
-/* Мэйн */
 
+/* Мэйн */
 /* Баннер */
+/* Заголовок */
+.main-tittle {
+  color: #ffffff;
+}
 /* Кнопка */
+.button {
+  color: #ffffff;
+}
 
 /* Наши приимущества */
-
 /* Заголовок */
-
+.section-tittle {
+  color: #212121;
+}
 /* Абзац */
+.section-content {
+  color: #757575;
+}
 
 /* Наши услуги */
+/* Заголовок */
+.saction-tittle-services {
+  color: #212121;
+}
 
 /* Наша команда */
+/* Заголовок */
+.saction-tittle-team {
+  color: #212121;
+}
+/* Имена */
+.section-tittle-people {
+  color: #212121;
+}
+/* Должность */
+.section-content-people {
+  color: #757575;
+}
 
-/* Подвал */ ;
+/* Подвал */
+/* Фон */
+.background-footer {
+  background-color: #2f303a;
+}
+
+/* Адрес */
+.address {
+  color: #ffffff;
+}
+
+/* контакты */
