@@ -151,6 +151,9 @@ body {
   color: var(--white-color);
   background-color: var(--accent-text-color);
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 62;
 }
 
 .button-non-active {
@@ -158,11 +161,26 @@ body {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 62;
 }
 .button-non-active:hover,
 .button-non-active:focus {
   color: var(--white-color);
   background-color: var(--button-background-hover);
+}
+
+/* Пректы портфолио */
+.saction-project-tittle {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.section-project-text {
+  color: var(--tittle-text-color);
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 /* Подвал */
@@ -176,9 +194,6 @@ body {
 }
 
 /* Адрес */
-address {
-  font-style: normal;
-}
 
 .street {
   color: var(--white-color);
