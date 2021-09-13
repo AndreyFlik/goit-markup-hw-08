@@ -6,7 +6,8 @@
 /* Цвет акцента #2196F3 */
 /* Цвет лого #000000 */
 /* Белый #FFFFFF */
-
+/* Цвет ховера кнопки index #188CE8 */
+/* Задник неактивной кнопки портфолио #F5F4FA */
 body {
   background-color: #ffffff;
   color: #212121;
@@ -59,6 +60,11 @@ body {
 /* Кнопка */
 .button {
   color: #ffffff;
+  background-color: #2196f3;
+}
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
 }
 
 /* Наши приимущества */
@@ -91,6 +97,17 @@ body {
   color: #757575;
 }
 
+/* Фильтр портфолио */
+.button-non-active {
+  color: #212121;
+  background-color: #f5f4fa;
+}
+.button-non-active:hover,
+.button-non-active:focus {
+  color: #ffffff;
+  background-color: #188ce8;
+}
+
 /* Подвал */
 /* Лого */
 .logo-footer {
@@ -105,5 +122,3 @@ body {
 .address {
   color: #ffffff;
 }
-
-/* контакты */
