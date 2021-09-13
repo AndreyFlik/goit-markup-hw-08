@@ -1,4 +1,4 @@
-/* Цвето основоного текста #212121 */
+/* Цвет основоного текста #212121 */
 /* Вторичный цвет текста #757575 */
 /* Первичный фон #FFFFFF */
 /* Вторичный фон #E5E5E5 */
@@ -8,9 +8,18 @@
 /* Белый #FFFFFF */
 /* Цвет ховера кнопки index #188CE8 */
 /* Задник неактивной кнопки портфолио #F5F4FA */
+
+:root {
+  --primary-text-color: #212121;
+  --tittle-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --white-color: #ffffff;
+  --button-background-hover: #188ce8;
+}
+
 body {
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
 
@@ -26,7 +35,7 @@ body {
 
 .logo {
   text-decoration: none;
-  color: #2196f3;
+  color: var(--accent-text-color);
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -37,7 +46,7 @@ body {
 /* Ссылки */
 .link {
   text-decoration: none;
-  color: #212121;
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -45,7 +54,7 @@ body {
 
 .active-link {
   text-decoration: none;
-  color: #2196f3;
+  color: var(--accent-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -53,27 +62,27 @@ body {
 
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 
 /* Контакты */
 .nav-link {
   text-decoration: none;
-  color: #757575;
+  color: var(--tittle-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--accent-text-color);
 }
 
 /* Мэйн */
 /* Баннер */
 /* Заголовок */
 .main-tittle {
-  color: #ffffff;
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -82,8 +91,8 @@ body {
 /* Кнопка */
 .button {
   cursor: pointer;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
   font-family: inherit;
   font-size: 16px;
   line-height: 1.8;
@@ -91,7 +100,7 @@ body {
 
 .button:hover,
 .button:focus {
-  background-color: #188ce8;
+  background-color: var(--button-background-hover);
 }
 
 /* Наши приимущества */
@@ -101,13 +110,12 @@ body {
 }
 
 .section-tittle {
-  color: #212121;
   font-size: 14px;
   line-height: 1.14;
 }
 /* Абзац */
 .section-content {
-  color: #757575;
+  color: var(--tittle-text-color);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -115,7 +123,6 @@ body {
 /* Наши услуги */
 /* Заголовок */
 .saction-tittle-services {
-  color: #212121;
   font-size: 36px;
   line-height: 1.16;
 }
@@ -123,47 +130,45 @@ body {
 /* Наша команда */
 /* Заголовок */
 .saction-tittle-team {
-  color: #212121;
   font-size: 36px;
   line-height: 1.16;
 }
 /* Имена */
 .section-tittle-people {
-  color: #212121;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 /* Должность */
 .section-content-people {
-  color: #757575;
+  color: var(--tittle-text-color);
   font-size: 16px;
   line-height: 1.18;
 }
 
 /* Фильтр портфолио */
 .button-active {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
   font-family: inherit;
 }
 
 .button-non-active {
   cursor: pointer;
-  color: #212121;
+  color: var(--primary-text-color);
   background-color: #f5f4fa;
   font-family: inherit;
 }
 .button-non-active:hover,
 .button-non-active:focus {
-  color: #ffffff;
-  background-color: #188ce8;
+  color: var(--white-color);
+  background-color: var(--button-background-hover);
 }
 
 /* Подвал */
 /* Лого */
 .logo-footer {
-  color: #ffffff;
+  color: var(--white-color);
 }
 /* Фон */
 .background-footer {
@@ -176,7 +181,7 @@ address {
 }
 
 .street {
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 14px;
   line-height: 1.71;
 }
