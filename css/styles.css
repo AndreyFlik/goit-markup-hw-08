@@ -22,23 +22,30 @@ body {
   background-color: #2f303a;
 }
 /* Шапка */
-.accent {
-  color: #000000;
-}
 /* Лого */
+
 .logo {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
 }
+.accent {
+  color: #000000;
+}
 /* Ссылки */
 .link {
   color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .active-link {
   color: #2196f3;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .link:hover,
@@ -49,6 +56,9 @@ body {
 /* Контакты */
 .nav-link {
   color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -60,13 +70,21 @@ body {
 /* Заголовок */
 .main-tittle {
   color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
 }
 /* Кнопка */
 .button {
   cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.8;
 }
+
 .button:hover,
 .button:focus {
   background-color: #188ce8;
@@ -76,42 +94,57 @@ body {
 /* Заголовок */
 .section-tittle {
   color: #212121;
+  font-size: 14px;
+  line-height: 1.14;
 }
 /* Абзац */
 .section-content {
   color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Наши услуги */
 /* Заголовок */
 .saction-tittle-services {
   color: #212121;
+  font-size: 36px;
+  line-height: 1.16;
 }
 
 /* Наша команда */
 /* Заголовок */
 .saction-tittle-team {
   color: #212121;
+  font-size: 36px;
+  line-height: 1.16;
 }
 /* Имена */
 .section-tittle-people {
   color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
 }
 /* Должность */
 .section-content-people {
   color: #757575;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 /* Фильтр портфолио */
 .button-active {
   color: #ffffff;
   background-color: #2196f3;
+  font-family: inherit;
 }
 
 .button-non-active {
   cursor: pointer;
   color: #212121;
   background-color: #f5f4fa;
+  font-family: inherit;
 }
 .button-non-active:hover,
 .button-non-active:focus {
@@ -130,6 +163,12 @@ body {
 }
 
 /* Адрес */
-.address {
+address {
+  font-style: normal;
+}
+
+.street {
   color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71;
 }
