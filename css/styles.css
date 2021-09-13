@@ -20,12 +20,20 @@ body {
   background-color: #2f303a;
 }
 /* Шапка */
-
+.accent {
+  color: #000000;
+}
 /* Лого */
-
+.logo {
+  color: #2196f3;
+}
 /* Ссылки */
 .link {
   color: #212121;
+}
+
+.active-link {
+  color: #2196f3;
 }
 
 .link:hover {
@@ -89,6 +97,10 @@ body {
 }
 
 /* Подвал */
+/* Лого */
+.logo-footer {
+  color: #ffffff;
+}
 /* Фон */
 .background-footer {
   background-color: #2f303a;
