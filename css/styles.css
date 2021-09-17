@@ -88,6 +88,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
 }
 /* Кнопка */
 .button {
@@ -113,6 +114,7 @@ body {
 .section-tittle {
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 /* Абзац */
 .section-content {
