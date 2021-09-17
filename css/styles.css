@@ -210,4 +210,12 @@ body {
 .nav-link-footer {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.nav-link-footer:focus,
+.nav-link-footer:hover {
+  color: var(--accent-text-color);
 }
