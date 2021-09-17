@@ -8,7 +8,7 @@
 /* Белый #FFFFFF */
 /* Цвет ховера кнопки index #188CE8 */
 /* Задник неактивной кнопки портфолио #F5F4FA */
-
+/* Цвет текста контактов в подвале color: rgba(255, 255, 255, 0.6); */
 :root {
   --primary-text-color: #212121;
   --tittle-text-color: #757575;
@@ -202,4 +202,10 @@ body {
   color: var(--white-color);
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
+}
+
+.nav-link-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
