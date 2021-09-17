@@ -9,6 +9,7 @@
 /* Цвет ховера кнопки index #188CE8 */
 /* Задник неактивной кнопки портфолио #F5F4FA */
 /* Цвет текста контактов в подвале color: rgba(255, 255, 255, 0.6); */
+/* Цвет фона кнопок в портфолио #f5f4fa */
 :root {
   --primary-text-color: #212121;
   --tittle-text-color: #757575;
@@ -16,6 +17,7 @@
   --white-color: #ffffff;
   --button-background-hover: #188ce8;
   --background-secondary-color: #2f303a;
+  --backfround-button-color: #f5f4fa;
 }
 
 body {
@@ -151,8 +153,8 @@ body {
 
 /* Фильтр портфолио */
 .button-active {
-  color: var(--white-color);
-  background-color: var(--accent-text-color);
+  color: var(--primary-text-color);
+  background-color: var(--backfround-button-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -162,7 +164,7 @@ body {
 .button-non-active {
   cursor: pointer;
   color: var(--primary-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--backfround-button-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
