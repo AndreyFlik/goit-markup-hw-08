@@ -27,6 +27,24 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px solid indigo;
+}
+
 .second-background {
   background-color: #e5e5e5;
 }
@@ -35,6 +53,9 @@ body {
   background-color: var(--background-secondary-color);
 }
 /* Шапка */
+.header-section {
+  background-color: lightcoral;
+}
 /* Лого */
 
 .logo {
