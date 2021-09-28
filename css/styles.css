@@ -21,6 +21,12 @@
   --backfround-button-color: #f5f4fa;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -38,11 +44,17 @@ p {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
   border: 3px solid indigo;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .second-background {
@@ -133,6 +145,8 @@ p {
 /* Заголовок */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .section-tittle {
