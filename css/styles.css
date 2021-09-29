@@ -31,6 +31,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -42,7 +44,7 @@ p {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-
+  background-color: lawngreen;
   border: 3px solid indigo;
 }
 
@@ -59,9 +61,7 @@ p {
   background-color: var(--background-secondary-color);
 }
 /* Шапка */
-.header-section {
-  background-color: lightcoral;
-}
+
 /* Лого */
 
 .logo {
