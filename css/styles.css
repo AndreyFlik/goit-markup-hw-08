@@ -182,9 +182,13 @@ p {
   margin-bottom: 10px;
 }
 
+.flex-work {
+  display: flex;
+  align-self: center;
+}
+
 .section-tittle-box {
   margin-right: 30px;
-  align-self: center;
 }
 
 .section-tittle-box:last-child {
@@ -207,8 +211,9 @@ p {
   margin-bottom: 50px;
 }
 
-.flex-work {
+.flex-work-service {
   display: flex;
+  align-self: center;
 }
 
 .saction-tittle-images-work {
@@ -224,6 +229,8 @@ p {
 .saction-tittle-team {
   font-size: 36px;
   line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
 }
 /* Имена */
 .section-tittle-people {
