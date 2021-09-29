@@ -184,8 +184,7 @@ p {
 
 .section-tittle-box {
   margin-right: 30px;
-  /* width: 270px; */
-  flex-grow: 1;
+  align-self: center;
 }
 
 .section-tittle-box:last-child {
