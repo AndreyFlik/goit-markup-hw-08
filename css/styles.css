@@ -75,6 +75,19 @@ p {
   margin-bottom: 32px;
 }
 
+.flex-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.list-item {
+  margin-right: 50px;
+}
+
+.list-item:last-child {
+  margin-right: 0;
+}
+
 /* Спан у лого */
 .accent {
   color: #000000;
@@ -89,7 +102,7 @@ p {
   line-height: 1.14;
 }
 
-.list-item:nth-child(even) {
+.list-item-background {
   background-color: #e5e5e5;
 }
 
@@ -170,6 +183,10 @@ p {
 .saction-tittle-services {
   font-size: 36px;
   line-height: 1.16;
+}
+
+.flex-work {
+  display: flex;
 }
 
 /* Наша команда */

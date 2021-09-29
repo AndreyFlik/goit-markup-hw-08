@@ -16,15 +16,19 @@
     <!-- Шапка -->
     <header>
       <div class="container">
-        <nav>
+        <nav class="flex-menu">
           <a class="logo" href="./index.html"> Web<span class="accent">Studio</span></a>
-          <ul class="list">
-            <li><a class="active-link" href="./index.html">Студия</a></li>
-            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="link" href="">Контакты</a></li>
+          <ul class="list flex-menu">
+            <li class="list-item">
+              <a class="link flex-link" href="./index.html">Студия</a>
+            </li>
+            <li class="list-item">
+              <a class="active-link flex-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="list-item"><a class="link flex-link" href="">Контакты</a></li>
           </ul>
           <div>
-            <ul class="list">
+            <ul class="list flex-menu">
               <li><a class="nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
               <li><a class="nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
@@ -36,8 +40,8 @@
     <!-- Мэйн -->
     <main>
       <!-- Фильтры -->
-      <div class="container">
-        <section>
+      <section class="section">
+        <div class="container">
           <h2>Фильтры</h2>
           <ul class="list">
             <li><button class="button-active" type="button">Все</button></li>
@@ -46,12 +50,9 @@
             <li><button class="button-non-active" type="button">Дизайн</button></li>
             <li><button class="button-non-active" type="button">Маркетинг</button></li>
           </ul>
-        </section>
-      </div>
-
-      <!-- Проекты -->
-      <div class="container">
-        <section>
+        </div>
+        <div class="container">
+          <!-- Наши проекты -->
           <h1>Проекты</h1>
           <ul class="list">
             <li>
@@ -104,8 +105,8 @@
               <p class="section-project-text">Приложение</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- Подвал -->
