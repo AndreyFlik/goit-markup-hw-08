@@ -151,6 +151,8 @@ p {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 /* Кнопка */
 .button {
@@ -177,7 +179,17 @@ p {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
+
+.section-tittle-box {
+  margin-right: 30px;
+}
+
+.section-tittle-box:last-child {
+  margin-right: 0;
+}
+
 /* Абзац */
 .section-content {
   color: var(--tittle-text-color);
