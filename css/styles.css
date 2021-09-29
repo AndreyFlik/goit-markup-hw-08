@@ -66,6 +66,13 @@ p {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
+}
+
+.flex-menu {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 /* Спан у лого */
