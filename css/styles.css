@@ -53,15 +53,11 @@ p {
   padding-bottom: 94px;
 }
 
-.second-background {
-  background-color: #e5e5e5;
-}
-
 .background-content {
   background-color: var(--background-secondary-color);
 }
-/* Шапка */
 
+/* Шапка */
 /* Лого */
 
 .logo {
@@ -71,9 +67,12 @@ p {
   font-size: 26px;
   line-height: 1.19;
 }
+
+/* Спан у лого */
 .accent {
   color: #000000;
 }
+
 /* Ссылки */
 .link {
   text-decoration: none;
@@ -81,6 +80,10 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.list-item:nth-child(even) {
+  background-color: #e5e5e5;
 }
 
 .active-link {
