@@ -79,6 +79,10 @@ p {
   align-items: center;
 }
 
+.flex-menu-contact {
+  margin-left: auto;
+}
+
 .list-item {
   margin-right: 50px;
 }
