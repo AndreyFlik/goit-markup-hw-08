@@ -184,6 +184,8 @@ p {
 
 .section-tittle-box {
   margin-right: 30px;
+  /* width: 270px; */
+  flex-grow: 1;
 }
 
 .section-tittle-box:last-child {
@@ -202,10 +204,20 @@ p {
 .saction-tittle-services {
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .flex-work {
   display: flex;
+}
+
+.saction-tittle-images-work {
+  margin-right: 30px;
+}
+
+.saction-tittle-images-work:last-child {
+  margin-right: 0;
 }
 
 /* Наша команда */
