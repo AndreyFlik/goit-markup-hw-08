@@ -45,12 +45,17 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   background-color: lawngreen;
-  border: 3px solid indigo;
+  border: 2px solid indigo;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .background-content {
@@ -71,13 +76,7 @@ p {
 
 .flex-menu {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.flex-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  align-items: center;
 }
 
 .list-item {
@@ -86,6 +85,12 @@ p {
 
 .list-item:last-child {
   margin-right: 0;
+}
+
+.active-nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 /* Спан у лого */
@@ -160,11 +165,6 @@ p {
 
 /* Наши приимущества */
 /* Заголовок */
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 .section-tittle {
   font-size: 14px;
