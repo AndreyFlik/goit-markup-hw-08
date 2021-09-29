@@ -21,12 +21,6 @@
   --backfround-button-color: #f5f4fa;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
