@@ -312,12 +312,13 @@ p {
 
 .logo-footer-block {
   box-sizing: border-box;
-  margin-top: 60px;
 }
 
 /* Фон */
 .background-footer {
   background-color: var(--background-secondary-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 /* Адрес */
@@ -325,7 +326,6 @@ p {
 .box-address {
   box-sizing: border-box;
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .street {
