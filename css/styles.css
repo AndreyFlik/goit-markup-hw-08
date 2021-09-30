@@ -49,8 +49,8 @@ p {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: lawngreen;
-  border: 2px solid indigo;
+  /* background-color: lawngreen;
+  border: 2px solid indigo; */
 }
 
 .section {
@@ -69,6 +69,10 @@ p {
 
 /* Шапка */
 /* Лого */
+
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
 
 .logo {
   text-decoration: none;
