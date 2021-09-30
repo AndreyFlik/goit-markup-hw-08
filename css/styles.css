@@ -27,20 +27,19 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.vusually-hidden  {
-   position:  absolute;
-   width: 1px;
-   height:  1px;
-   margin:  -1px;
-   padding:  0;
-   border:  0;
+.vusually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 
-   white-space:  nowrap;
-   clip-path:  inset(100%);
-   clip:  rect(0 0 0 0);
-   overflow:  hidden:
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
 
 img {
   display: block;
@@ -168,7 +167,6 @@ p {
 /* Мэйн */
 /* Баннер */
 /* Заголовок */
-
 
 .main-tittle {
   color: var(--white-color);
@@ -349,7 +347,6 @@ p {
   margin-left: 30px;
   margin-top: 30px;
   /* outline: 1px solid black; */
-
 }
 
 /* .list-project:nth-last-child(-n + 3){
@@ -372,7 +369,7 @@ p {
   color: var(--tittle-text-color);
   font-size: 16px;
   line-height: 1.87;
-    margin-top: 8px;
+  margin-top: 8px;
   margin-left: 24px;
   margin-bottom: 20px;
 }
