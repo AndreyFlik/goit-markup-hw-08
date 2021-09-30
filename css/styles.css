@@ -235,6 +235,25 @@ p {
 
 /* Наша команда */
 /* Заголовок */
+.work-team {
+  width: 270px;
+  height: 368px;
+  border: 1px solid black;
+}
+
+.work-team-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.work-team-margin {
+  margin-right: 30px;
+}
+
+.work-team-margin:last-child {
+  margin-right: 0;
+}
+
 .saction-tittle-team {
   font-size: 36px;
   line-height: 1.16;
