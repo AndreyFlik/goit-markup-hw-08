@@ -218,7 +218,7 @@ p {
 
 .flex-work-service {
   display: flex;
-  align-self: center;
+  justify-content: center;
 }
 
 .saction-tittle-images-work {
