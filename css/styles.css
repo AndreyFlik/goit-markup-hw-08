@@ -275,6 +275,19 @@ p {
   background-color: var(--button-background-hover);
 }
 
+.button-portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.button-portfolio-margin {
+  margin-right: 8px;
+}
+
+.button-portfolio-margin:last-child {
+  margin-right: 0;
+}
+
 /* Пректы портфолио */
 .saction-project-tittle {
   font-size: 18px;
