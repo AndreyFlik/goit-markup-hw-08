@@ -292,12 +292,24 @@ p {
 .logo-footer {
   color: var(--white-color);
 }
+
+.logo-footer-block {
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
 /* Фон */
 .background-footer {
   background-color: var(--background-secondary-color);
 }
 
 /* Адрес */
+
+.box-address {
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
 
 .street {
   color: var(--white-color);
