@@ -27,6 +27,21 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.vusually-hidden  {
+   position:  absolute;
+   width: 1px;
+   height:  1px;
+   margin:  -1px;
+   padding:  0;
+   border:  0;
+
+   white-space:  nowrap;
+   clip-path:  inset(100%);
+   clip:  rect(0 0 0 0);
+   overflow:  hidden:
+}
+
+
 img {
   display: block;
   max-width: 100%;
@@ -44,7 +59,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 1070px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -317,15 +332,50 @@ p {
 }
 
 /* Пректы портфолио */
+
+.list-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.list-project {
+  width: 370px;
+  height: 404px;
+  background-color: var(--white-color);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  outline: 1px solid black;
+
+}
+
+.list-project:nth-last-child(-n + 3){
+  margin-bottom: 0;
+}
+
+
+.list-project:nth-child(3n) {
+  margin-right: 0;
+}
+
 .saction-project-tittle {
   font-size: 18px;
   line-height: 2;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 
 .section-project-text {
   color: var(--tittle-text-color);
   font-size: 16px;
   line-height: 1.87;
+    margin-top: 8px;
+  margin-left: 24px;
+}
+
+.container-project {
+  margin-top: 34px;
 }
 
 /* Подвал */
