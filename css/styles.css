@@ -168,6 +168,8 @@ p {
 /* Мэйн */
 /* Баннер */
 /* Заголовок */
+
+
 .main-tittle {
   color: var(--white-color);
   font-weight: 900;
@@ -337,27 +339,27 @@ p {
   display: flex;
   flex-wrap: wrap;
 
-
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .list-project {
-  width: 370px;
-  height: 404px;
+flex-basis: calc(100% / 3 - 30px);
   background-color: var(--white-color);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
   outline: 1px solid black;
 
 }
 
-.list-project:nth-last-child(-n + 3){
+/* .list-project:nth-last-child(-n + 3){
   margin-bottom: 0;
 }
 
 
 .list-project:nth-child(3n) {
   margin-right: 0;
-}
+} */
 
 .saction-project-tittle {
   font-size: 18px;
@@ -372,6 +374,7 @@ p {
   line-height: 1.87;
     margin-top: 8px;
   margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .container-project {
