@@ -13,6 +13,8 @@
 /* Цвет рамки шапки #ececec;*/
 /* Цвет фона карточек #e5e5e5; */
 /* Цвет рамки карточек портфолио #eeeeee */
+/* Цвет фона svg #afb1b8; */
+
 :root {
   --primary-text-color: #212121;
   --tittle-text-color: #757575;
@@ -24,6 +26,7 @@
   --background-hat: #ececec;
   --background-card: #e5e5e5;
   --border-color-portfolio: #eeeeee;
+  --svg-color: #afb1b8;
 }
 
 body {
@@ -123,6 +126,12 @@ ul {
 
 .svg-contact {
   margin-right: 10px;
+  fill: var(--svg-color);
+}
+
+.nav-link:hover .svg-contact,
+.nav-link:focus .svg-contact {
+  fill: var(--accent-text-color);
 }
 
 .flex-menu {
@@ -360,15 +369,28 @@ ul {
   display: flex;
 }
 
-.svg-team-block {
+.svg-team-link {
   margin-right: 10px;
   padding: 12px;
-  background-color: #188ce8;
   border-radius: 50%;
 }
 
-.svg-team-block:last-child {
+.svg-team-link:hover,
+.svg-team-link:focus {
+  background-color: var(--accent-text-color);
+}
+
+.svg-team-link:last-child {
   margin-right: 0px;
+}
+
+.svg-team {
+  fill: var(--svg-color);
+}
+
+.svg-team-link:hover .svg-team,
+.svg-team-link:focus .svg-team {
+  fill: var(--white-color);
 }
 
 /* Постоянные клиенты */
