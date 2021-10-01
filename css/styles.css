@@ -582,6 +582,7 @@ ul {
 /* Заголовок */
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .follow-footer {
