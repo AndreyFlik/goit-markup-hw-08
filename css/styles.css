@@ -84,9 +84,18 @@ p {
 }
 
 .background-content {
-  background-color: var(--background-secondary-color);
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-color: var(--background-secondary-color);
+}
+
+.background-content-images {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
 }
 
 /* Шапка */
@@ -103,6 +112,10 @@ p {
   font-size: 26px;
   line-height: 1.19;
   margin-right: 93px;
+}
+
+.svg-contact {
+  margin-right: 10px;
 }
 
 .flex-menu {
@@ -209,6 +222,10 @@ p {
 
 /* Наши приимущества */
 /* Заголовок */
+
+.svg-our-work {
+  padding: 25px 100px;
+}
 
 .section-hard {
   padding-bottom: 0;
