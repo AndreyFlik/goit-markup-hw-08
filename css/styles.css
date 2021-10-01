@@ -14,6 +14,7 @@
 /* Цвет фона карточек #e5e5e5; */
 /* Цвет рамки карточек портфолио #eeeeee */
 /* Цвет фона svg #afb1b8; */
+/* Цвет фона кнопки в подвале svg */
 
 :root {
   --primary-text-color: #212121;
@@ -27,6 +28,7 @@
   --background-card: #e5e5e5;
   --border-color-portfolio: #eeeeee;
   --svg-color: #afb1b8;
+  --svg-footer: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -367,9 +369,6 @@ ul {
   align-items: center;
   justify-content: center;
   display: flex;
-}
-
-.svg-team-link {
   margin-right: 10px;
   padding: 12px;
   border-radius: 50%;
@@ -568,10 +567,48 @@ ul {
 }
 
 /* СоцСети */
-.footer-flex-logo {
-  display: inline-flex;
-}
-
+/* Заголовок */
 .footer-flex {
   display: flex;
+  align-items: center;
+}
+
+.follow-footer-flex {
+}
+
+.follow-footer {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+/*Соцсети */
+.svg-footer-link {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--svg-footer);
+}
+
+.svg-footer-margin {
+  margin-right: 10px;
+}
+
+.svg-footer-margin:last-child {
+  margin-right: 0;
+}
+
+.svg-footer {
+  fill: var(--white-color);
+}
+
+.svg-footer-link:hover,
+.svg-footer-link:focus {
+  background-color: var(--accent-text-color);
 }
