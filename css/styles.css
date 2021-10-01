@@ -63,6 +63,12 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .container {
   width: 1070px;
   margin-right: auto;
@@ -91,8 +97,9 @@ p {
 }
 
 .background-content-images {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url(../images/background.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px;
@@ -144,6 +151,11 @@ p {
 /* Спан у лого */
 .accent {
   color: #000000;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
 }
 
 /* Ссылки */
@@ -332,6 +344,34 @@ p {
   margin-top: 10px;
   text-align: center;
 }
+
+/* Соцсети */
+.svg-team-flex {
+  display: flex;
+  list-style: none;
+  margin-top: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-team-link {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.svg-team-block {
+  margin-right: 10px;
+  padding: 12px;
+  background-color: #188ce8;
+  border-radius: 50%;
+}
+
+.svg-team-block:last-child {
+  margin-right: 0px;
+}
+
+/* Постоянные клиенты */
 
 /* Фильтр портфолио */
 .button-active {
