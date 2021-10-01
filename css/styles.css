@@ -10,7 +10,9 @@
 /* Задник неактивной кнопки портфолио #F5F4FA */
 /* Цвет текста контактов в подвале color: rgba(255, 255, 255, 0.6); */
 /* Цвет фона кнопок в портфолио #f5f4fa */
-/*  */
+/* Цвет рамки шапки #ececec;*/
+/* Цвет фона карточек #e5e5e5; */
+/* Цвет рамки карточек портфолио #eeeeee */
 :root {
   --primary-text-color: #212121;
   --tittle-text-color: #757575;
@@ -19,6 +21,9 @@
   --button-background-hover: #188ce8;
   --background-secondary-color: #2f303a;
   --backfround-button-color: #f5f4fa;
+  --background-hat: #ececec;
+  --background-card: #e5e5e5;
+  --border-color-portfolio: #eeeeee;
 }
 
 body {
@@ -88,7 +93,7 @@ p {
 /* Лого */
 
 .header-border {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--background-hat);
 }
 
 .logo {
@@ -138,7 +143,7 @@ p {
 }
 
 .list-item-background {
-  background-color: #e5e5e5;
+  background-color: var(--background-card);
 }
 
 .active-link {
@@ -368,7 +373,7 @@ p {
   background-color: var(--white-color);
   margin-left: 30px;
   margin-top: 30px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-color-portfolio);
   /* outline: 1px solid black; */
 }
 
