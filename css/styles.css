@@ -73,7 +73,7 @@ ul {
 }
 
 .container {
-  width: 1070px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -394,6 +394,43 @@ ul {
 }
 
 /* Постоянные клиенты */
+.clients-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.li-box-clients {
+  margin-right: 30px;
+}
+
+.link-svg-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--svg-color);
+  border-radius: 4px;
+}
+
+.li-box-clients:last-child {
+  margin-right: 0;
+}
+
+.svg-our-clients {
+  fill: var(--svg-color);
+}
+
+.link-svg-client:hover .svg-our-clients,
+.link-svg-client:focus .svg-our-clients {
+  fill: var(--accent-text-color);
+}
+
+.link-svg-client:hover,
+.link-svg-client:focus {
+  border: 1px solid var(--accent-text-color);
+}
 
 /* Фильтр портфолио */
 .button-active {
