@@ -44,6 +44,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  max-height: auto;
 }
 
 h1,
@@ -79,6 +80,8 @@ p {
 
 .background-content {
   background-color: var(--background-secondary-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* Шапка */
@@ -189,6 +192,9 @@ p {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -198,6 +204,10 @@ p {
 
 /* Наши приимущества */
 /* Заголовок */
+
+.section-hard {
+  padding-bottom: 0;
+}
 
 .section-tittle {
   font-size: 14px;
@@ -251,9 +261,12 @@ p {
 /* Наша команда */
 /* Заголовок */
 .work-team {
-  width: 270px;
-  height: 368px;
   background-color: var(--white-color);
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
   /* border: 1px solid black; */
 }
 
@@ -349,15 +362,6 @@ p {
   /* outline: 1px solid black; */
 }
 
-/* .list-project:nth-last-child(-n + 3){
-  margin-bottom: 0;
-}
-
-
-.list-project:nth-child(3n) {
-  margin-right: 0;
-} */
-
 .saction-project-tittle {
   font-size: 18px;
   line-height: 2;
@@ -385,7 +389,7 @@ p {
 }
 
 .logo-footer-block {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* Фон */
@@ -398,8 +402,12 @@ p {
 /* Адрес */
 
 .box-address {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin-top: 20px;
+}
+
+.pudding-li-footer {
+  padding-bottom: 9px;
 }
 
 .street {
