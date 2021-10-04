@@ -748,9 +748,17 @@ ul {
   margin-right: 93px;
 }
 
-.form-input {
+.form-lable {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+
+.form-input {
+  background-color: var(--background-secondary-color);
+}
+
+.form-input::placeholder {
+  font-family: Roboto;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
