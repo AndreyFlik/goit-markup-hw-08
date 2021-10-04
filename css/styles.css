@@ -749,11 +749,9 @@ ul {
 }
 
 .form-lable {
+  box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-}
-
-.form-input {
   background-color: var(--background-secondary-color);
 }
 
@@ -836,4 +834,29 @@ ul {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+/* Наполнение модалки */
+.modal-form {
+  display: block;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.modal-form-tittle {
+  display: block;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.modal-form-contact {
+  display: block;
 }
