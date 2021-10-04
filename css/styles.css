@@ -773,14 +773,14 @@ ul {
 .button-modal {
   position: absolute;
 
-  height: 30px;
-  width: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--white-color);
-  border-radius: 50%;
   top: 8px;
   right: 8px;
   cursor: pointer;
+
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  border-radius: 50%;
 }
 
 .button-modal:hover {
@@ -790,4 +790,7 @@ ul {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.svg-modal {
 }
