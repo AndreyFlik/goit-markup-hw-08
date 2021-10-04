@@ -107,7 +107,12 @@ ul {
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+
+  background-size: cover;
+  max-width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Шапка */
@@ -129,6 +134,7 @@ ul {
 .svg-contact {
   margin-right: 10px;
   fill: var(--svg-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover .svg-contact,
@@ -159,6 +165,31 @@ ul {
   display: block;
 }
 
+.active-nav-link-hover {
+  position: relative;
+}
+
+.active-nav-link-hover::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.active-nav-link-hover:hover::after,
+.active-nav-link-hover:focus::after {
+  opacity: 1;
+}
+
 /* Спан у лого */
 .accent {
   color: #000000;
@@ -176,6 +207,12 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
 }
 
 .list-item-background {
@@ -183,6 +220,8 @@ ul {
 }
 
 .active-link {
+  position: relative;
+
   text-decoration: none;
   color: var(--accent-text-color);
   font-weight: 500;
@@ -190,9 +229,17 @@ ul {
   line-height: 1.14;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-text-color);
+.active-link::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
 }
 
 /* Контакты */
@@ -202,6 +249,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -236,11 +284,57 @@ ul {
   border: none;
   padding: 10px 32px;
   border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--button-background-hover);
+}
+
+/* Модальное окно */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+
+  width: 528px;
+  height: 581px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.button-modal {
+  position: absolute;
+
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.button-modal:hover {
+  border: 1px solid var(--accent-text-color);
 }
 
 /* Наши приимущества */
@@ -286,7 +380,7 @@ ul {
   line-height: 1.71;
 }
 
-/* Наши услуги */
+/* Наши услуги Чем мы занимаемся*/
 /* Заголовок */
 .saction-tittle-services {
   font-size: 36px;
@@ -301,11 +395,37 @@ ul {
 }
 
 .saction-tittle-images-work {
+  position: relative;
+
   margin-right: 30px;
 }
 
 .saction-tittle-images-work:last-child {
   margin-right: 0;
+}
+
+.work-service-hover {
+  position: relative;
+}
+
+.work-service-hover-text {
+  position: absolute;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  width: 100%;
+
+  background-color: rgba(47, 48, 58, 0.8);
+
+  bottom: 0;
+  right: 0;
 }
 
 /* Наша команда */
@@ -372,6 +492,8 @@ ul {
   margin-right: 10px;
   padding: 12px;
   border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-team-link:hover,
@@ -385,6 +507,8 @@ ul {
 
 .svg-team {
   fill: var(--svg-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-team-link:hover .svg-team,
@@ -411,6 +535,8 @@ ul {
   padding: 16px 32px;
   border: 1px solid var(--svg-color);
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .li-box-clients:last-child {
@@ -419,6 +545,7 @@ ul {
 
 .svg-our-clients {
   fill: var(--svg-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-svg-client:hover .svg-our-clients,
@@ -506,6 +633,34 @@ ul {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+/* Ховер карточки */
+.section-project-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.techno {
+  position: absolute;
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 64px 24px;
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  bottom: 0;
+  right: 0;
+
+  transform: translateY(100%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-project-hover:hover .techno,
+.section-project-hover:focus .techno {
+  transform: translateY(0%);
+}
+
 .project-wrapper {
   padding: 24px 20px;
 }
@@ -567,6 +722,8 @@ ul {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link-footer:focus,
@@ -604,6 +761,8 @@ ul {
   padding: 12px;
   border-radius: 50%;
   background-color: var(--svg-footer);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-footer-margin {
