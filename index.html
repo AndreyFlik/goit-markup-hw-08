@@ -66,7 +66,12 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
+          <!-- </div>
+        <div class="backdrop" data-modal>
+          <div class="modal">
+            <button class="button-modal" data-modal-close></button>
+          </div> -->
         </div>
       </section>
 
@@ -115,19 +120,28 @@
         </div>
       </section>
 
-      <!-- Наши услуги -->
+      <!-- Наши услуги Чем мы занимаемся-->
       <section class="section">
         <div class="container">
           <h2 class="saction-tittle-services">Чем мы занимаемся</h2>
           <ul class="list flex-work-service">
             <li class="saction-tittle-images-work">
-              <img src="./images/imgkodim.jpg" alt="Кодим" width="370" />
+              <div class="work-service-hover">
+                <img src="./images/imgkodim.jpg" alt="Кодим" width="370" />
+                <h3 class="work-service-hover-text">Десктопные приложения</h3>
+              </div>
             </li>
             <li class="saction-tittle-images-work">
-              <img src="./images/imgformat.jpg" alt="Форматируем" width="370" />
+              <div class="work-service-hover">
+                <img src="./images/imgformat.jpg" alt="Форматируем" width="370" />
+                <h3 class="work-service-hover-text">Мобильные приложения</h3>
+              </div>
             </li>
             <li class="saction-tittle-images-work">
-              <img src="./images/imgkodim.jpg" alt="Десигн" width="370" />
+              <div class="work-service-hover">
+                <img src="./images/imgkodim.jpg" alt="Десигн" width="370" />
+                <h3 class="work-service-hover-text">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -398,5 +412,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
