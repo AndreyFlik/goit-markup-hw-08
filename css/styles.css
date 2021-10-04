@@ -773,6 +773,10 @@ ul {
 .button-modal {
   position: absolute;
 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
   top: 8px;
   right: 8px;
   cursor: pointer;
@@ -787,10 +791,11 @@ ul {
   border: 1px solid var(--accent-text-color);
 }
 
+.svg-modal {
+  fill: #000000;
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
-}
-
-.svg-modal {
 }
