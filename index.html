@@ -423,7 +423,8 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- is-hidden -->
+    <div class="backdrop" is-hidden data-modal>
       <div class="modal">
         <button class="button-modal" data-modal-close type="button">
           <svg class="svg-modal" width="18" height="18">
@@ -433,23 +434,20 @@
         <div class="modal-form">
           <h2 class="modal-form-tittle">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="">
-            <form class="modal-form-contact" autocomplete="on">
-              <p>Имя</p>
+            <form class="modal-form-list">
               <label>
-                <input class="" type="text" name="username" />
+                Имя
+                <input type="text" name="username" />
               </label>
-              <p>Телефон</p>
               <label>
-                <input class="" type="text" name="username" />
+                Телефон
+                <input type="tel" name="phone-number" />
               </label>
-              <p>Почта</p>
-              <label>
-                <input class="" type="text" name="username" />
+              Почта
+                <input type="email" name="email" />
               </label>
-              <p>Комментарий</p>
-              <label>
-                <textarea placeholder="Введите текст"></textarea>
-              </label>
+
+              <button type="submit">Submit</button>
             </form>
           </div>
         </div>

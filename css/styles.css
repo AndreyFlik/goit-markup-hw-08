@@ -769,6 +769,12 @@ ul {
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   width: 358px;
   margin-right: 12px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input-form::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-button {
@@ -859,6 +865,12 @@ ul {
   margin-left: 40px;
 }
 
+.modal-form-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
 .modal-form-tittle {
   display: block;
 
@@ -870,8 +882,4 @@ ul {
   letter-spacing: 0.03em;
 
   color: #212121;
-}
-
-.modal-form-contact {
-  display: block;
 }
