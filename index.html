@@ -424,7 +424,7 @@
     </footer>
 
     <!-- is-hidden -->
-    <div class="backdrop" is-hidden data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="button-modal" data-modal-close type="button">
           <svg class="svg-modal" width="18" height="18">
@@ -435,16 +435,42 @@
           <h2 class="modal-form-tittle">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="">
             <form class="modal-form-list">
-              <label>
+              <label class="label-text">
                 Имя
-                <input type="text" name="username" />
+                <span class="modal-form-list-span">
+                  <input type="text" name="username" class="input-text" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-person-modal"></use>
+                  </svg>
+                </span>
               </label>
-              <label>
+
+              <label class="label-text">
                 Телефон
-                <input type="tel" name="phone-number" />
+                <span class="modal-form-list-span">
+                  <input type="tel" name="phone-number" class="input-text" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-person-modal"></use>
+                  </svg>
+                </span>
               </label>
-              Почта
-                <input type="email" name="email" />
+
+              <label class="label-text">
+                Почта
+                <span class="modal-form-list-span">
+                  <input type="email" name="email" class="input-text" />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-person-modal"></use>
+                  </svg>
+                </span>
+              </label>
+
+              <label class="label-text">
+                Комментарий
+                <span class="modal-form-list-span">
+                  <textarea name="user-comment" class="form-text" placeholder="Введите текст">
+                  </textarea>
+                </span>
               </label>
 
               <button type="submit">Submit</button>
@@ -454,6 +480,6 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

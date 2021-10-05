@@ -866,9 +866,60 @@ ul {
 }
 
 .modal-form-list {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin-top: 40px;
+}
+
+.modal-form-list-span {
+  position: relative;
+
+  display: block;
+  margin-top: 4px;
+}
+
+.label-text {
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: var(--tittle-text-color);
+}
+
+.input-text {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  outline: none;
+  color: #000000;
+}
+
+.input-text:focus {
+  border-color: var(--accent-text-color);
+}
+
+.input-text:focus + .form-icon {
+  fill: var(--accent-text-color);
+}
+
+.form-text {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 16px 12px;
+  outline: none;
+  color: #000000;
+  height: 120px;
+  resize: none;
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .modal-form-tittle {
