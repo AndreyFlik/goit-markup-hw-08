@@ -1,6 +1,8 @@
 @import './utils/variables';
-@import './utils/base-stile';
-@import './utils/vhidden';
+@import './base/base-stile';
+@import './base/section';
+@import './base/vhidden';
+@import './base/container';
 @import './components/header';
 @import './components/hero';
 @import './components/our-skills';

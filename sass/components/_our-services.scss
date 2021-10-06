@@ -13,6 +13,9 @@
 }
 
 .saction-tittle-images-work {
+  display: flex;
+  justify-content: center;
+
   position: relative;
 
   margin-right: 30px;
@@ -20,10 +23,6 @@
 
 .saction-tittle-images-work:last-child {
   margin-right: 0;
-}
-
-.work-service-hover {
-  position: relative;
 }
 
 .work-service-hover-text {

@@ -18,36 +18,36 @@
 
   <body>
     <!-- Шапка -->
-    <header class="header-border">
-      <div class="container flex-menu">
-        <nav class="flex-menu">
-          <a class="logo" href="./index.html"> Web<span class="accent">Studio</span></a>
-          <ul class="list flex-menu">
-            <li class="list-item">
-              <a class="active-link active-nav-link" href="./index.html">Студия</a>
+    <header class="header">
+      <div class="container header-nav">
+        <nav class="header-nav">
+          <a class="header-nav__logo" href="./index.html"
+            >Web<span class="header-nav__logo--accent">Studio</span></a
+          >
+          <ul class="header-nav">
+            <li class="header-nav__list">
+              <a class="header-nav__link--active" href="./index.html">Студия</a>
             </li>
-            <li class="list-item">
-              <a class="link active-nav-link active-nav-link-hover" href="./portfolio.html"
-                >Портфолио</a
-              >
+            <li class="header-nav__list">
+              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="list-item">
-              <a class="link active-nav-link active-nav-link-hover" href="">Контакты</a>
+            <li class="header-nav__list">
+              <a class="header-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list flex-menu flex-menu-contact">
-          <li class="list-item">
-            <a class="nav-link" href="mailto:info@devstudio.com">
-              <svg class="svg-contact" width="16" height="12">
+        <ul class="header-contacts">
+          <li class="header-contact-nav">
+            <a class="header-contact-nav__link" href="mailto:info@devstudio.com">
+              <svg class="header-contact-nav__svg" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="list-item">
-            <a class="nav-link" href="tel:+380961111111">
-              <svg class="svg-contact" width="10" height="16">
+          <li class="header-contact-nav">
+            <a class="header-contact-nav__link" href="tel:+380961111111">
+              <svg class="header-contact-nav__svg" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -119,9 +119,9 @@
       <section class="section">
         <div class="container">
           <h2 class="saction-tittle-services">Чем мы занимаемся</h2>
-          <ul class="list flex-work-service">
+          <ul class="flex-work-service">
             <li class="saction-tittle-images-work">
-              <div class="work-service-hover">
+              <div>
                 <img src="./images/imgkodim.jpg" alt="Кодим" width="370" />
                 <h3 class="work-service-hover-text">Десктопные приложения</h3>
               </div>
@@ -146,7 +146,7 @@
       <section class="section list-item-background">
         <div class="container">
           <h2 class="saction-tittle-team">Наша команда</h2>
-          <ul class="list work-team-flex">
+          <ul class="work-team-flex">
             <li class="work-team work-team-margin">
               <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" />
               <h3 class="section-tittle-people">Игорь Демьяненко</h3>
