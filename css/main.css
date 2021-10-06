@@ -260,7 +260,32 @@ ul {
 
 /* Наши приимущества */
 /* Заголовок */
-.svg-our-work {
+.skills {
+  padding-bottom: 0;
+}
+
+.skills__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.skills__list--tittle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.skills__list--paragraph {
+  color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.skills__list--svg {
   width: 270px;
   height: 120px;
   padding: 25px 100px;
@@ -269,38 +294,12 @@ ul {
   border-radius: 4px;
 }
 
-.section-hard {
-  padding-bottom: 0;
-}
-
-.section-tittle {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.flex-work {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-.section-tittle-box {
+.skills__list--indent {
   margin-right: 30px;
 }
 
-.section-tittle-box:last-child {
+.skills__list--indent:last-child {
   margin-right: 0;
-}
-
-/* Абзац */
-.section-content {
-  color: #757575;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 /* Наши услуги Чем мы занимаемся*/
