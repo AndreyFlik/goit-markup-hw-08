@@ -1,0 +1,59 @@
+/* Баннер */
+/* Заголовок */
+
+.main-tittle {
+  color: $white-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.background-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-color: $background-secondary-color;
+}
+
+.background-content-images {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: cover;
+  max-width: 1600px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Кнопка */
+.button {
+  cursor: pointer;
+  color: $white-color;
+  background-color: $accent-text-color;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.8;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  background-color: $button-background-hover;
+}
