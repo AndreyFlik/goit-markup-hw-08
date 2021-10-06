@@ -1,0 +1,159 @@
+/* Подвал */
+/* Лого */
+.logo-sooter-not-span {
+  text-decoration: none;
+  color: $accent-text-color;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-footer {
+  color: $white-color;
+}
+
+/* Фон */
+.background-footer {
+  background-color: $background-secondary-color;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+/* Адрес */
+
+.box-address {
+  margin-top: 20px;
+}
+
+.pudding-li-footer {
+  padding-bottom: 9px;
+}
+
+.street {
+  color: $white-color;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.nav-link-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link-footer:focus,
+.nav-link-footer:hover {
+  color: $accent-text-color;
+}
+
+.footer-flex-basis {
+  margin-right: 70px;
+}
+
+/* СоцСети */
+/* Заголовок */
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.follow-footer {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/*Соцсети */
+.svg-footer-link {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  padding: 12px;
+  border-radius: 50%;
+  background-color: $svg-footer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-footer-margin {
+  margin-right: 10px;
+}
+
+.svg-footer-margin:last-child {
+  margin-right: 0;
+}
+
+.svg-footer {
+  fill: $white-color;
+}
+
+.svg-footer-link:hover,
+.svg-footer-link:focus {
+  background-color: $accent-text-color;
+}
+
+/* Форма подпишись */
+.footer-flex-following {
+  margin-right: 93px;
+}
+
+.footer-form-flex {
+  display: flex;
+  align-items: center;
+}
+
+.footer-input-form {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  margin-right: 12px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input-form::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-button {
+  display: flex;
+  align-items: center;
+
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-form-svg {
+  margin-left: 10px;
+}

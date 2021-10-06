@@ -1,0 +1,47 @@
+/* Наши услуги Чем мы занимаемся*/
+/* Заголовок */
+.saction-tittle-services {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.flex-work-service {
+  display: flex;
+  justify-content: center;
+}
+
+.saction-tittle-images-work {
+  position: relative;
+
+  margin-right: 30px;
+}
+
+.saction-tittle-images-work:last-child {
+  margin-right: 0;
+}
+
+.work-service-hover {
+  position: relative;
+}
+
+.work-service-hover-text {
+  position: absolute;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  width: 100%;
+
+  background-color: rgba(47, 48, 58, 0.8);
+
+  bottom: 0;
+  right: 0;
+}
