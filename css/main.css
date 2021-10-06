@@ -134,6 +134,10 @@ ul {
   color: #2196f3;
 }
 
+.header-nav__link:hover::after, .header-nav__link:hover::after, .header-nav__link:focus::after, .header-nav__link:focus::after {
+  opacity: 1;
+}
+
 .header-nav__link::after {
   position: absolute;
   bottom: 0;
@@ -149,11 +153,7 @@ ul {
   opacity: 0;
 }
 
-.header-nav__link:hover::after,
-.header-nav__link:focus::after {
-  opacity: 1;
-}
-
+/* Контакты */
 .header-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,7 +164,7 @@ ul {
   margin-left: auto;
 }
 
-.header-contact-nav {
+.header-contacts__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,8 +173,7 @@ ul {
           align-items: center;
 }
 
-/* Контакты */
-.header-contact-nav__link {
+.header-contact__nav--link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,21 +190,21 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contact-nav__link:hover,
-.header-contact-nav__link:focus {
+.header-contact__nav--link:hover, .header-contact__nav--link:focus {
   color: #2196f3;
 }
 
-.header-contact-nav__svg {
+.header-contact__nav--link:hover .header-contact__nav--svg,
+.header-contact__nav--link:hover .header-contact__nav--svg, .header-contact__nav--link:focus .header-contact__nav--svg,
+.header-contact__nav--link:focus .header-contact__nav--svg {
+  fill: #2196f3;
+}
+
+.header-contact__nav--svg {
   margin-right: 10px;
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contact-nav__link:hover .header-contact-nav__svg,
-.header-contact-nav__link:focus .header-contact-nav__svg {
-  fill: #2196f3;
 }
 
 /* Баннер */
