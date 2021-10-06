@@ -18,6 +18,10 @@
     position: relative;
 
     margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &--tittle {
     position: absolute;
@@ -37,9 +41,5 @@
 
     bottom: 0;
     right: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }

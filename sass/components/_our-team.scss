@@ -4,14 +4,11 @@
   background-color: $background-card;
 }
 
-.work-team {
-  background-color: $white-color;
-  padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
-  /* border: 1px solid black; */
+.saction-tittle-team {
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .work-team-flex {
@@ -19,20 +16,20 @@
   justify-content: center;
 }
 
-.work-team-margin {
+.work-team {
+  background-color: $white-color;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   margin-right: 30px;
+  /* border: 1px solid black; */
 }
 
-.work-team-margin:last-child {
+.work-team:last-child {
   margin-right: 0;
 }
 
-.saction-tittle-team {
-  font-size: 36px;
-  line-height: 1.16;
-  margin-bottom: 50px;
-  text-align: center;
-}
 /* Имена */
 .section-tittle-people {
   font-weight: 500;
