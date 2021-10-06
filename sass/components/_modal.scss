@@ -18,7 +18,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--white-color);
+  background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -37,19 +37,19 @@
 
   padding: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--white-color);
+  background-color: $white-color;
   border-radius: 50%;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-modal:hover,
 .button-modal:focus {
-  border: 1px solid var(--accent-text-color);
+  border: 1px solid $accent-text-color;
 }
 
 .button-modal:hover .svg-modal,
 .button-modal:focus .svg-modal {
-  fill: var(--accent-text-color);
+  fill: $accent-text-color;
 }
 
 .svg-modal {
@@ -81,7 +81,7 @@
   font-size: 12px;
   line-height: 1.6;
   letter-spacing: 0.01em;
-  color: var(--tittle-text-color);
+  color: $tittle-text-color;
 }
 
 .input-text {
@@ -99,11 +99,11 @@
 
 .input-text:focus,
 .form-text:focus {
-  border-color: var(--accent-text-color);
+  border-color: $accent-text-color;
 }
 
 .input-text:focus + .form-icon {
-  fill: var(--accent-text-color);
+  fill: $accent-text-color;
 }
 
 .form-text {
@@ -149,7 +149,7 @@
 .checkbox-link {
   text-decoration-line: underline;
 
-  color: var(--accent-text-color);
+  color: $accent-text-color;
 }
 
 .check-item {
@@ -169,8 +169,8 @@
 }
 
 .checkbox-margin:checked ~ .check-item {
-  background-color: var(--accent-text-color);
-  border: 2px solid var(--accent-text-color);
+  background-color: $accent-text-color;
+  border: 2px solid $accent-text-color;
 }
 
 .lable-flex {
@@ -182,10 +182,10 @@
 
 .button-submit-modal {
   display: block;
-  background-color: var(--accent-text-color);
+  background-color: $accent-text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--white-color);
+  color: $white-color;
   padding: 10px 56px;
   margin-top: 30px;
   margin-right: auto;
@@ -202,6 +202,6 @@
 
 .button-submit-modal:focus,
 .button-submit-modal:hover {
-  background-color: var(--button-background-hover);
+  background-color: $button-background-hover;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
