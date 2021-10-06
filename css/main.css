@@ -352,18 +352,18 @@ ul {
 
 /* Наша команда */
 /* Заголовок */
-.list-item-background {
+.section--background {
   background-color: #e5e5e5;
 }
 
-.saction-tittle-team {
+.team--tittle {
   font-size: 36px;
   line-height: 1.16;
   margin-bottom: 50px;
   text-align: center;
 }
 
-.work-team-flex {
+.team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,22 +372,20 @@ ul {
           justify-content: center;
 }
 
-.work-team {
+.team__list {
   background-color: #ffffff;
   padding-bottom: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-right: 30px;
-  /* border: 1px solid black; */
 }
 
-.work-team:last-child {
+.team__list:last-child {
   margin-right: 0;
 }
 
-/* Имена */
-.section-tittle-people {
+.team__list--tittle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -395,8 +393,7 @@ ul {
   text-align: center;
 }
 
-/* Должность */
-.section-content-people {
+.team__list--paragraph {
   color: #757575;
   font-size: 16px;
   line-height: 1.18;
@@ -405,7 +402,7 @@ ul {
 }
 
 /* Соцсети */
-.svg-team-flex {
+.team__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +416,7 @@ ul {
           justify-content: center;
 }
 
-.svg-team-link {
+.team__social--link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -436,24 +433,22 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-team-link:hover,
-.svg-team-link:focus {
+.team__social--link:hover, .team__social--link:focus {
   background-color: #2196f3;
 }
 
-.svg-team-link:last-child {
+.team__social--link:hover.team__social--svg, .team__social--link:focus.team__social--svg {
+  fill: #ffffff;
+}
+
+.team__social--link :last-child {
   margin-right: 0px;
 }
 
-.svg-team {
+.team__social--svg {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.svg-team-link:hover .svg-team,
-.svg-team-link:focus .svg-team {
-  fill: #ffffff;
 }
 
 /* Постоянные клиенты */

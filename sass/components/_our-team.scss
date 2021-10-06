@@ -1,88 +1,83 @@
 /* Наша команда */
 /* Заголовок */
-.list-item-background {
+.section--background {
   background-color: $background-card;
 }
 
-.saction-tittle-team {
+.team--tittle {
   font-size: 36px;
   line-height: 1.16;
   margin-bottom: 50px;
   text-align: center;
 }
 
-.work-team-flex {
+.team {
   display: flex;
   justify-content: center;
-}
 
-.work-team {
-  background-color: $white-color;
-  padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  margin-right: 30px;
-  /* border: 1px solid black; */
-}
+  &__list {
+    background-color: $white-color;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-right: 30px;
 
-.work-team:last-child {
-  margin-right: 0;
-}
-
-/* Имена */
-.section-tittle-people {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  margin-top: 30px;
-  text-align: center;
-}
-/* Должность */
-.section-content-people {
-  color: $tittle-text-color;
-  font-size: 16px;
-  line-height: 1.18;
-  margin-top: 10px;
-  text-align: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--tittle {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.18;
+      margin-top: 30px;
+      text-align: center;
+    }
+    &--paragraph {
+      color: $tittle-text-color;
+      font-size: 16px;
+      line-height: 1.18;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
 }
 
 /* Соцсети */
-.svg-team-flex {
+.team__social {
   display: flex;
   list-style: none;
   margin-top: 16px;
   align-items: center;
   justify-content: center;
-}
 
-.svg-team-link {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-right: 10px;
-  padding: 12px;
-  border-radius: 50%;
+  &--link {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 10px;
+    padding: 12px;
+    border-radius: 50%;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.svg-team-link:hover,
-.svg-team-link:focus {
-  background-color: $accent-text-color;
-}
+    &:hover,
+    &:focus {
+      background-color: $accent-text-color;
 
-.svg-team-link:last-child {
-  margin-right: 0px;
-}
+      &.team__social--svg {
+        fill: $white-color;
+      }
+    }
 
-.svg-team {
-  fill: $svg-color;
+    :last-child {
+      margin-right: 0px;
+    }
+  }
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &--svg {
+    fill: $svg-color;
 
-.svg-team-link:hover .svg-team,
-.svg-team-link:focus .svg-team {
-  fill: $white-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
