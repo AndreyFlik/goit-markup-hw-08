@@ -303,15 +303,14 @@ ul {
 }
 
 /* Наши услуги Чем мы занимаемся*/
-/* Заголовок */
-.saction-tittle-services {
+.services__tittle {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.flex-work-service {
+.services__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +319,7 @@ ul {
           justify-content: center;
 }
 
-.saction-tittle-images-work {
+.services__list--img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,11 +330,7 @@ ul {
   margin-right: 30px;
 }
 
-.saction-tittle-images-work:last-child {
-  margin-right: 0;
-}
-
-.work-service-hover-text {
+.services__list--tittle {
   position: absolute;
   font-size: 14px;
   line-height: 1.14;
@@ -349,6 +344,10 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0;
   right: 0;
+}
+
+.services__list--tittle:last-child {
+  margin-right: 0;
 }
 
 /* Наша команда */
