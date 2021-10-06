@@ -303,7 +303,7 @@ ul {
   height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
-  background: #f5f4fa;
+  background: var(--backfround-button-color);
   border-radius: 4px;
 }
 
@@ -817,8 +817,7 @@ ul {
 .modal {
   position: absolute;
 
-  width: 528px;
-  height: 581px;
+  padding: 40px;
 
   top: 50%;
   left: 50%;
@@ -873,11 +872,6 @@ ul {
   margin-top: 40px;
   margin-right: 40px;
   margin-left: 40px;
-}
-
-.modal-form-list {
-  display: block;
-  margin-top: 40px;
 }
 
 .modal-form-list-span {
@@ -946,6 +940,7 @@ ul {
   letter-spacing: 0.03em;
 
   color: #212121;
+  margin-bottom: 12px;
 }
 
 .checkbox-text {
@@ -953,6 +948,12 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.checkbox-link {
+  text-decoration-line: underline;
+
+  color: var(--accent-text-color);
 }
 
 .check-item {
@@ -973,6 +974,7 @@ ul {
 
 .checkbox-margin:checked ~ .check-item {
   background-color: var(--accent-text-color);
+  border: 2px solid var(--accent-text-color);
 }
 
 .lable-flex {
@@ -994,6 +996,9 @@ ul {
   margin-left: auto;
   border: none;
   cursor: pointer;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: 1.87;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
