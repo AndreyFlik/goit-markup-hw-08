@@ -939,7 +939,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--primary-text-color);
   margin-bottom: 12px;
 }
 
