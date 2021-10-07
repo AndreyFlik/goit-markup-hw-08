@@ -1,4 +1,13 @@
 /* Фильтр портфолио */
+.button-portfolio-margin {
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.button-portfolio-margin:last-child {
+  margin-right: 0;
+}
+
 .button-active {
   color: $white-color;
   font-family: inherit;
@@ -40,13 +49,4 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.button-portfolio-margin {
-  margin-right: 8px;
-  border-radius: 4px;
-}
-
-.button-portfolio-margin:last-child {
-  margin-right: 0;
 }
