@@ -437,7 +437,7 @@ ul {
   background-color: #2196f3;
 }
 
-.team__social--link:hover.team__social--svg, .team__social--link:focus.team__social--svg {
+.team__social--link:hover .team__social--svg, .team__social--link:focus .team__social--svg {
   fill: #ffffff;
 }
 

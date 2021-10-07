@@ -65,7 +65,7 @@
     &:focus {
       background-color: $accent-text-color;
 
-      &.team__social--svg {
+      & .team__social--svg {
         fill: $white-color;
       }
     }
