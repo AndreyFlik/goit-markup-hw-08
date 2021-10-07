@@ -513,7 +513,27 @@ ul {
 
 /* Подвал */
 /* Лого */
-.logo-sooter-not-span {
+/* Фон */
+.footer__background {
+  background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer__indent {
+  margin-right: 70px;
+}
+
+.footer__logo {
   text-decoration: none;
   color: #2196f3;
   font-family: Raleway;
@@ -521,34 +541,27 @@ ul {
   line-height: 1.19;
 }
 
-.logo-footer {
+.footer__logo--color {
   color: #ffffff;
 }
 
-/* Фон */
-.background-footer {
-  background-color: #2f303a;
-  padding-bottom: 60px;
-  padding-top: 60px;
-}
-
 /* Адрес */
-.box-address {
+.footer__address {
   margin-top: 20px;
 }
 
-.pudding-li-footer {
+.footer__list {
   padding-bottom: 9px;
 }
 
-.street {
+.footer__link--paragraph {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
 
-.nav-link-footer {
+.footer__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
@@ -558,27 +571,28 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link-footer:focus,
-.nav-link-footer:hover {
+.footer__link:focus,
+.footer__link:hover {
   color: #2196f3;
 }
 
-.footer-flex-basis {
-  margin-right: 70px;
+/* Форма подпишись */
+.footer-social__indent {
+  margin-right: 93px;
 }
 
 /* СоцСети */
 /* Заголовок */
-.footer-flex {
+.footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.follow-footer {
+.footer-social__tittle {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -590,8 +604,25 @@ ul {
           align-items: center;
 }
 
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-social__list {
+  margin-right: 10px;
+}
+
+.footer-social__list:last-child {
+  margin-right: 0;
+}
+
 /*Соцсети */
-.svg-footer-link {
+.footer-social__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -608,26 +639,13 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-footer-margin {
-  margin-right: 10px;
-}
-
-.svg-footer-margin:last-child {
-  margin-right: 0;
-}
-
-.svg-footer {
-  fill: #ffffff;
-}
-
-.svg-footer-link:hover,
-.svg-footer-link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
   background-color: #2196f3;
 }
 
-/* Форма подпишись */
-.footer-flex-following {
-  margin-right: 93px;
+.footer-social__svg {
+  fill: #ffffff;
 }
 
 .footer-form-flex {

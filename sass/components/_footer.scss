@@ -1,6 +1,22 @@
 /* Подвал */
 /* Лого */
-.logo-sooter-not-span {
+/* Фон */
+.footer__background {
+  background-color: $background-secondary-color;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__indent {
+  margin-right: 70px;
+}
+
+.footer__logo {
   text-decoration: none;
   color: $accent-text-color;
   font-family: Raleway;
@@ -8,35 +24,28 @@
   line-height: 1.19;
 }
 
-.logo-footer {
+.footer__logo--color {
   color: $white-color;
-}
-
-/* Фон */
-.background-footer {
-  background-color: $background-secondary-color;
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
 
 /* Адрес */
 
-.box-address {
+.footer__address {
   margin-top: 20px;
 }
 
-.pudding-li-footer {
+.footer__list {
   padding-bottom: 9px;
 }
 
-.street {
+.footer__link--paragraph {
   color: $white-color;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
 
-.nav-link-footer {
+.footer__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
@@ -46,23 +55,25 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link-footer:focus,
-.nav-link-footer:hover {
+.footer__link:focus,
+.footer__link:hover {
   color: $accent-text-color;
 }
 
-.footer-flex-basis {
-  margin-right: 70px;
+/* Форма подпишись */
+.footer-social__indent {
+  margin-right: 93px;
 }
 
 /* СоцСети */
 /* Заголовок */
-.footer-flex {
+
+.footer-social {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
-.follow-footer {
+.footer-social__tittle {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -72,8 +83,21 @@
   align-items: center;
 }
 
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social__list {
+  margin-right: 10px;
+}
+
+.footer-social__list:last-child {
+  margin-right: 0;
+}
+
 /*Соцсети */
-.svg-footer-link {
+.footer-social__link {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -85,26 +109,13 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-footer-margin {
-  margin-right: 10px;
-}
-
-.svg-footer-margin:last-child {
-  margin-right: 0;
-}
-
-.svg-footer {
-  fill: $white-color;
-}
-
-.svg-footer-link:hover,
-.svg-footer-link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
   background-color: $accent-text-color;
 }
 
-/* Форма подпишись */
-.footer-flex-following {
-  margin-right: 93px;
+.footer-social__svg {
+  fill: $white-color;
 }
 
 .footer-form-flex {
