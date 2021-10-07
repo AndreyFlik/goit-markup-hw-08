@@ -452,7 +452,14 @@ ul {
 }
 
 /* Постоянные клиенты */
-.clients-flex {
+.clients__tittle {
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,11 +468,15 @@ ul {
           justify-content: center;
 }
 
-.li-box-clients {
+.clients__list {
   margin-right: 30px;
 }
 
-.link-svg-client {
+.clients__list:last-child {
+  margin-right: 0;
+}
+
+.clients__list--link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,24 +495,20 @@ ul {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.li-box-clients:last-child {
-  margin-right: 0;
+.clients__list--link:hover, .clients__list--link:focus {
+  border: 1px solid #2196f3;
 }
 
-.svg-our-clients {
-  fill: #afb1b8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-svg-client:hover .svg-our-clients,
-.link-svg-client:focus .svg-our-clients {
+.clients__list--link:hover .clients__list--svg,
+.clients__list--link:hover .clients__list--svg, .clients__list--link:focus .clients__list--svg,
+.clients__list--link:focus .clients__list--svg {
   fill: #2196f3;
 }
 
-.link-svg-client:hover,
-.link-svg-client:focus {
-  border: 1px solid #2196f3;
+.clients__list--svg {
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Подвал */
