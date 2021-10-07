@@ -761,7 +761,7 @@ ul {
 }
 
 /* Пректы портфолио */
-.list-flex {
+.projects__indent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,7 +771,7 @@ ul {
   margin-top: -30px;
 }
 
-.list-project {
+.projects__list {
   -ms-flex-preferred-size: calc(100% / 3 - 30px);
       flex-basis: calc(100% / 3 - 30px);
   background-color: #ffffff;
@@ -785,19 +785,24 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-project:hover,
-.list-project:focus {
+.projects__list:hover, .projects__list:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Ховер карточки */
-.section-project-hover {
+.projects__hover {
   position: relative;
   overflow: hidden;
 }
 
-.techno {
+.projects__hover:hover .projects__hover--techno,
+.projects__hover:focus .projects__hover--techno {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.projects__hover--techno {
   position: absolute;
   font-size: 18px;
   line-height: 1.55;
@@ -815,23 +820,17 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-project-hover:hover .techno,
-.section-project-hover:focus .techno {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-.project-wrapper {
+.projects__wrapper {
   padding: 24px 20px;
 }
 
-.saction-project-tittle {
+.projects__wrapper--tittle {
   font-size: 18px;
   line-height: 2;
   padding-bottom: 8px;
 }
 
-.section-project-text {
+.projects__wrapper--text {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
