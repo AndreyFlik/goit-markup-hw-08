@@ -56,13 +56,13 @@ ul {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 448px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 
@@ -467,10 +467,11 @@ ul {
 
 /* Постоянные клиенты */
 .clients__tittle {
-  font-size: 36px;
-  line-height: 1.16;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
+  letter-spacing: 0.03em;
+  font-size: 28px;
+  line-height: 1.17;
 }
 
 .clients {
@@ -480,14 +481,16 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients__list {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .clients__list:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .clients__list--link {
@@ -500,7 +503,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   padding: 16px 32px;
   border: 1px solid #afb1b8;
