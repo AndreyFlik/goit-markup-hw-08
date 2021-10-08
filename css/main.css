@@ -542,7 +542,7 @@ ul {
 }
 
 .footer__indent {
-  margin-right: 70px;
+  margin-right: 85px;
 }
 
 .footer__logo {
@@ -584,6 +584,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 /* СоцСети */
