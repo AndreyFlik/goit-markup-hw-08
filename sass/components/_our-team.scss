@@ -13,8 +13,10 @@
 
 .team {
   // display: flex;
-  justify-content: center;
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   &__list {
     background-color: $white-color;
     padding-bottom: 30px;
@@ -26,6 +28,18 @@
     // &:last-child {
     // margin-right: 0;
     // }
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+      // max-width: 354px;
+    }
     &--tittle {
       font-weight: 500;
       font-size: 16px;
