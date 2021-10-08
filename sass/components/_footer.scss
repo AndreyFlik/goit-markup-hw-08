@@ -10,6 +10,12 @@
     justify-content: center;
   }
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+
   &__background {
     background-color: $background-secondary-color;
     padding-bottom: 60px;
@@ -20,6 +26,10 @@
     // margin-right: 85px;
     margin-right: 165px;
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 85px;
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -39,6 +49,11 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
 
     &--color {
       color: $white-color;
