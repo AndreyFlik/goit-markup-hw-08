@@ -73,6 +73,12 @@ ul {
 }
 
 /* Шапка */
+@media screen and (max-width: 768px) {
+  .header-nav__none {
+    display: none;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -84,6 +90,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
 }
 
 /* Лого */

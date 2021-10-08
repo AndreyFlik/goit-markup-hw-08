@@ -1,11 +1,18 @@
 /* Шапка */
-
+.header-nav__none {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 .header {
   border-bottom: 1px solid $background-hat;
 
   &-nav {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
