@@ -670,6 +670,9 @@ ul {
     margin-bottom: 0;
     margin-right: 30px;
   }
+  .clients__list:nth-child(3n) {
+    margin-right: 30px;
+  }
   .clients__list:last-child {
     margin-right: 0;
   }
@@ -748,6 +751,9 @@ ul {
             align-items: baseline;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -758,20 +764,20 @@ ul {
 }
 
 .footer__indent {
-  margin-right: 165px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__indent {
+    margin-right: 165px;
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__indent {
     margin-right: 85px;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    margin-left: 0;
   }
 }
 
@@ -792,6 +798,7 @@ ul {
   .footer__logo {
     font-size: 26px;
     line-height: 1.19;
+    text-align: left;
   }
 }
 
@@ -823,6 +830,12 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    text-align: left;
+  }
+}
+
 .footer__link:focus, .footer__link:hover {
   color: #2196f3;
 }
@@ -847,6 +860,17 @@ ul {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-social__indent {
+    margin-right: 93px;
+  }
+}
+
 .footer-social__tittle {
   font-size: 14px;
   line-height: 1.14;
@@ -858,6 +882,12 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social__tittle {
+    text-align: left;
+  }
 }
 
 .footer-social__list {
@@ -893,6 +923,17 @@ ul {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer-form__input {
   font-family: Roboto;
   font-size: 16px;
@@ -915,6 +956,13 @@ ul {
 @media screen and (min-width: 768px) {
   .footer-form__input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+    margin-bottom: 0;
   }
 }
 
