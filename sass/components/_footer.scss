@@ -4,6 +4,12 @@
   // display: flex;
   // align-items: baseline;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__background {
     background-color: $background-secondary-color;
     padding-bottom: 60px;
@@ -12,8 +18,12 @@
 
   &__indent {
     // margin-right: 85px;
-
+    margin-right: 165px;
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
   }
 
   &__logo {
@@ -151,6 +161,10 @@
     margin-right: 12px;
     outline: none;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);

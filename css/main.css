@@ -622,6 +622,19 @@ ul {
 }
 
 /* Подвал */
+@media screen and (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__background {
   background-color: #2f303a;
   padding-bottom: 60px;
@@ -629,7 +642,14 @@ ul {
 }
 
 .footer__indent {
+  margin-right: 165px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-left: 0;
+  }
 }
 
 .footer__logo {
@@ -760,6 +780,12 @@ ul {
   margin-right: 12px;
   outline: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 
 .footer-form__input::-webkit-input-placeholder {
