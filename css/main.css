@@ -489,6 +489,16 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .team__list {
   background-color: #ffffff;
   padding-bottom: 30px;
@@ -504,6 +514,16 @@ ul {
   }
   .team__list:nth-last-child(-n + 2) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .team__list {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .team__list:last-child {
+    margin-right: 0;
   }
 }
 
