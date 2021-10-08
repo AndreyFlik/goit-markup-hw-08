@@ -8,8 +8,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // max-width: 1600px;
-  max-width: 480px;
+  max-width: 1600px;
 
   margin-left: auto;
   margin-right: auto;
@@ -17,6 +16,11 @@
   // padding-bottom: 200px;
   padding-top: 118px;
   padding-bottom: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__tittle {
     color: $white-color;
@@ -31,6 +35,11 @@
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
 
