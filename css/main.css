@@ -297,18 +297,39 @@ ul {
   padding-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .skills__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .skills__list--tittle {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .skills__list--paragraph {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .skills__list--paragraph {
+    max-width: 354px;
+  }
 }
 
 .skills__list--svg {
@@ -320,13 +341,20 @@ ul {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .skills__list--svg {
+    max-width: 354px;
+  }
+}
+
 .skills__list--indent {
   margin-bottom: 30px;
 }
 
-.skills__list--indent:last-child {
-  margin-right: 0;
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .skills__list--indent:nth-child(odd) {
+    margin-right: 30px;
+  }
 }
 
 /* Наши услуги Чем мы занимаемся*/
