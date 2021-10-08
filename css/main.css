@@ -493,6 +493,15 @@ ul {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .clients__list:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .clients__list:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
 .clients__list--link {
   display: -webkit-box;
   display: -ms-flexbox;
