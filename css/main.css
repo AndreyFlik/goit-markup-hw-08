@@ -8,7 +8,7 @@ body {
 img {
   display: block;
   max-width: 100%;
-  max-height: auto;
+  height: auto;
 }
 
 h1,
@@ -378,9 +378,6 @@ ul {
 }
 
 .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -392,11 +389,6 @@ ul {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-right: 30px;
-}
-
-.team__list:last-child {
-  margin-right: 0;
 }
 
 .team__list--tittle {
@@ -405,6 +397,7 @@ ul {
   line-height: 1.18;
   margin-top: 30px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team__list--paragraph {
@@ -413,6 +406,7 @@ ul {
   line-height: 1.18;
   margin-top: 10px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Соцсети */
@@ -470,8 +464,14 @@ ul {
   margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 480px) {
+  .clients__tittle {
+    font-size: 28px;
+  }
 }
 
 .clients {
@@ -883,6 +883,7 @@ ul {
   top: 50%;
   left: 50%;
   width: calc(100vw - 30px);
+  max-width: 450px;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -890,12 +891,6 @@ ul {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    max-width: 450px;
-  }
 }
 
 @media screen and (min-width: 1200px) {

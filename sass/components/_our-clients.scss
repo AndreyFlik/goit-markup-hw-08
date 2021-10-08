@@ -7,8 +7,11 @@
   letter-spacing: 0.03em;
   // font-size: 36px;
   // line-height: 1.16;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1.17;
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
 }
 
 .clients {
