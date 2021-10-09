@@ -130,6 +130,8 @@ ul {
 .header-mobile__button {
   background-color: transparent;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header-nav__list {
