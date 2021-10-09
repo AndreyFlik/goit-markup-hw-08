@@ -92,8 +92,20 @@ ul {
           align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .header-nav {
+.header-nav__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav .header-nav__none {
     display: none;
   }
 }
@@ -103,13 +115,21 @@ ul {
   text-decoration: none;
   color: #2196f3;
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  margin-right: 93px;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 15px;
 }
 
 .header-nav__logo--accent {
   color: #000000;
+}
+
+.header-mobile__button {
+  background-color: transparent;
+  border: none;
 }
 
 .header-nav__list {

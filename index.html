@@ -19,12 +19,21 @@
   <body>
     <!-- Шапка -->
     <header class="header">
-      <div class="container header-nav header-nav__none">
+      <div class="container header-nav">
         <nav class="header-nav">
-          <a class="header-nav__logo" href="./index.html"
-            >Web<span class="header-nav__logo--accent">Studio</span></a
-          >
-          <ul class="header-nav">
+          <div class="header-nav__mobile">
+            <a class="header-nav__logo" href="./index.html"
+              >Web<span class="header-nav__logo--accent">Studio</span></a
+            >
+            <button class="header-mobile__button" type="button">
+              <svg width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-menu_head"></use>
+                <use href="./images/symbol-defs.svg#icon-close_head"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="header-nav header-nav__none">
             <li class="header-nav__list">
               <a class="header-nav__link--active" href="./index.html">Студия</a>
             </li>
@@ -36,7 +45,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contact">
+        <ul class="header-contact header-nav__none">
           <li class="header-contact__nav">
             <a class="header-contact__nav--link" href="mailto:info@devstudio.com">
               <svg class="header-contact__nav--svg" width="16" height="12">
