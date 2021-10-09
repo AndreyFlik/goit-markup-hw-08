@@ -77,15 +77,6 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .header-nav__mobile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,7 +112,7 @@ ul {
   background-color: transparent;
   border: none;
   padding: 0;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Лого */
@@ -1402,5 +1393,73 @@ ul {
 .mobile-menu {
   padding: 48px 40px;
   background-color: turquoise;
+}
+
+.mobile-menu__list {
+  margin-bottom: 302px;
+}
+
+.mobile-menu__link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+
+.mobile-menu__link--indent {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link--indent:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-menu__contact--tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.mobile-menu__contact--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile-social__link--indent {
+  margin-right: 10px;
+  margin-top: 64px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__link--indent:last-child {
+  margin-right: 0;
+  border: 0;
+}
+
+.mobile-social__link {
+  padding-right: 10px;
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
