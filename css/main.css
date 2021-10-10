@@ -688,6 +688,40 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .team__list--mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__list--tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list--tablet {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list--tablet {
+    display: none;
+  }
+}
+
+.team__list--desctop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list--desctop {
+    display: block;
+  }
+}
+
 /* Постоянные клиенты */
 .clients__tittle {
   margin-bottom: 30px;
