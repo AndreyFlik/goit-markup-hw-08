@@ -1106,19 +1106,40 @@ ul {
 }
 
 /* Фильтр портфолио */
+@media screen and (max-width: 1099px) {
+  .section__filter {
+    padding: 60px 0;
+  }
+}
+
 .portfolio__filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__filter {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio__filter--indent {
   margin-right: 8px;
   border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.portfolio__filter--indent:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .portfolio__filter--indent:last-child {
