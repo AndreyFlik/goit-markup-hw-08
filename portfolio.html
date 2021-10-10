@@ -20,23 +20,34 @@
     <!-- Шапка -->
     <header class="header">
       <div class="container header-nav">
-        <nav class="header-nav">
+        <nav class="header-nav__mobile">
           <a class="header-nav__logo" href="./index.html"
             >Web<span class="header-nav__logo--accent">Studio</span></a
           >
-          <ul class="header-nav">
+          <button
+            class="header-mobile__button js-open-menu"
+            aria-expanded="false"
+            aria-expanded="mobile-menu"
+            type="button"
+          >
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu_head"></use>
+            </svg>
+          </button>
+
+          <ul class="header-nav header-nav__none">
             <li class="header-nav__list">
-              <a class="header-nav__link" href="./index.html">Студия</a>
+              <a class="header-nav__link--active" href="./index.html">Студия</a>
             </li>
             <li class="header-nav__list">
-              <a class="header-nav__link--active" href="./portfolio.html">Портфолио</a>
+              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header-nav__list">
               <a class="header-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contact">
+        <ul class="header-contact header-nav__none">
           <li class="header-contact__nav">
             <a class="header-contact__nav--link" href="mailto:info@devstudio.com">
               <svg class="header-contact__nav--svg" width="16" height="12">
@@ -293,5 +304,59 @@
         </div>
       </div>
     </footer>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__button js-close-menu" type="button">
+        <svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-close_head"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__link--indent">
+          <a class="mobile-menu__link" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu__link--indent">
+          <a class="mobile-menu__link--acctive" href="./portfolio.html">Портфолио</a>
+        </li>
+        <li class="mobile-menu__link--indent"><a class="mobile-menu__link" href="">Контакты</a></li>
+      </ul>
+
+      <div>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__link--indent">
+            <a class="mobile-menu__contact--tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__link--indent">
+            <a class="mobile-menu__contact--mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__link--indent">
+            <a class="mobile-social__link" href="">Instagram</a>
+          </li>
+          <li class="mobile-social__link--indent">
+            <a class="mobile-social__link" href="">Twitter</a>
+          </li>
+          <li class="mobile-social__link--indent">
+            <a class="mobile-social__link" href="">Facebook</a>
+          </li>
+          <li class="mobile-social__link--indent">
+            <a class="mobile-social__link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Скрипт -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
