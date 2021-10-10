@@ -47,6 +47,11 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    fill: $accent-text-color;
+  }
 }
 
 /* Лого */

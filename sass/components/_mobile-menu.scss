@@ -11,9 +11,27 @@
   height: 100%;
 
   padding: 48px 40px;
-  background-color: turquoise;
+  background-color: $white-color;
 
   transform: translateX(100%);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    &:hover {
+      fill: $accent-text-color;
+    }
+  }
 
   &__link {
     font-family: Roboto;
