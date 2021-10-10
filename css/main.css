@@ -240,6 +240,15 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .header-contact__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +264,16 @@ ul {
   }
   .header-contact__nav:last-child {
     padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header-contact__nav {
+    padding-bottom: 0;
+    margin-right: 30px;
+  }
+  .header-contact__nav:last-child {
+    margin-right: 0;
   }
 }
 
