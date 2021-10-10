@@ -1437,6 +1437,10 @@ ul {
           transform: translateX(0);
 }
 
+.mobile-menu__list {
+  margin-bottom: 64px;
+}
+
 .mobile-menu__contact--tel {
   font-weight: 500;
   font-size: 34px;
@@ -1459,12 +1463,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: 0;
 }
 
 .mobile-social__link--indent {
   margin-right: 10px;
-  margin-top: 64px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
