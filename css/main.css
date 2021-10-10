@@ -1519,6 +1519,16 @@ ul {
   color: #212121;
 }
 
+.mobile-menu__link--acctive {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196f3;
+}
+
 .mobile-menu__link--indent {
   margin-bottom: 32px;
 }
@@ -1564,13 +1574,18 @@ ul {
 }
 
 .mobile-social__link--indent {
-  margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.mobile-social__link--indent:first-child {
+  padding-left: 0;
 }
 
 .mobile-social__link--indent:last-child {
-  margin-right: 0;
   border: 0;
+  padding-right: 0;
 }
 
 .mobile-social__link {
@@ -1581,10 +1596,5 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2196f3;
-  padding-right: 10px;
-}
-
-.mobile-social__link:last-child {
-  padding-right: 0;
 }
 /*# sourceMappingURL=main.css.map */
